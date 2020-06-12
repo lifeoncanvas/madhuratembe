@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+
+body,html{
+font-family: 'Rubik', sans-serif;
+background-color: #fff;
+margin: 0;
+padding: 0;
+height: 100vh;
+line-height: 180%;
+color: #666;
+text-align: center;
+padding: 12px;
+
+}
+
+.logo-box span{
+    margin-left: 880px;
+   
+    justify-content: space-between;
+}
+.logo-box i:hover{
+    color:#dead9d;
+    transform: scale(1.5);
+}
+.logo-box h5{
+  font-size: 28px;
+}
+
+.header{
+    height: 95vh;
+    background-image: url(paint7.jpg);
+     position: relative;
+    background-size: cover ;
+    background-position: center;
+    clip-path:polygon(0 0,100% 0,100% 70%,0 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header2{
+    height: 75vh;
+    background-image: url(paint3.jpg);
+     position: relative;
+    background-size: cover ;
+    background-position: center;
+    clip-path:polygon(0% 0%,100% 70%,0% 100%,0% 50%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.logo-box {
+    position: absolute;
+    font-family: 'Beth Ellen', cursive;
+    text-transform: lowercase;
+    top: 40px;
+    left: 40px;
+    color:#fff;
+  
+   
+}
+
+
+
+.logo{
+    height: 38px;
+    color: white;
+
+}
+
+.heading-primary{
+color:#fff;
+text-transform: uppercase;
+text-shadow: 0 0 10px #000;
+backface-visibility: hidden;
+/* margin-right: 890px; */
+
+}
+.heading-primary-main{
+display: block;
+font-size: 40px;
+text-shadow: 0 0 10px #000;
+font-weight: 400;
+letter-spacing: 35px;
+animation-name: moveInLeft;
+animation-duration: 1s;
+animation-timing-function: ease-out;
+
+}
+.heading-primary-sub{
+display: block;
+font-size: 19px;
+font-family: 'Beth Ellen', cursive;
+text-transform: lowercase;
+font-weight: 400;
+letter-spacing: 19px;
+animation:moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+
+    80%{
+        transform: translateX(25px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px)rotate(-50deg);
+    }
+    60%{
+        transform: rotate(360deg);
+    }
+
+    80%{
+        transform: translateX(-25px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.text-box{
+    position: absolute;
+    top:40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+ /* .navbar{
+  
+   
+}
+
+  #nav-item{
+    margin-left: 460px;
+  } 
+   
+    
+
+.in{
+    color: black;
+    margin-left: 40px;
+}
+ .navbar-brand{
+     float: left;
+  margin-right: 40%;
+} 
+.navbar-brand:hover{
+    letter-spacing: 8px;
+    transition:0.6s;
+   
+} */
+.jumbotron{
+    background-color:white ;
+}
+
+
+/* .parallax1{
+    background: url(main.jpg);
+    min-height: 90%;
+    position: relative;
+    opacity: .95;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path:polygon(0 0,100% 0,100% 70%,0 100%);
+    background-attachment: fixed;
+} */
+p{
+    margin-top: 50%;
+}
+#header1 h1{
+    color: #dead9d;
+    text-transform: uppercase;
+}
+#header1 .btn{
+    color: #dead9d;
+    border:1px solid #fff;
+    border-radius: 40px;
+}
+#header1 .btn:hover{
+    background-color: white;
+    color:#dead9d;
+   border-radius: 0px;
+  
+    border:1px solid #dead9d;
+}
+
+h1{
+   
+    color:  #dead9d;
+    
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: center;
+}
+.lip img{
+    height: 90vh;
+}
+
+.heading{
+    position: absolute;
+    color: #fafafa;
+    font-size: 550%;
+    top:38%;
+    margin-left: 30%;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+    letter-spacing: 38px;
+    
+}
+
+.col-md-6 {
+   
+    width: 42%;
+   /* margin-left: 10%; */
+    padding: 0 4%;
+    
+    float:left; 
+
+}
+.container{
+   
+    padding: 50px 80px;
+}
+.container{
+  
+    width: 100%;
+   
+    background: #f1f1f1;
+
+}
+.row{
+    box-sizing: border-box;
+    width :100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+
+}
+
+
+
+@media(max-width: 768px) {
+
+    .navbar-brand:hover{
+        letter-spacing: 5px;
+        transition:0.6s;
+       
+    }
+    #nav-item{
+        margin-left: 10px;
+      } 
+       
+    .heading{
+        font-size: 350%;
+        letter-spacing: 18px;
+        margin-left: 18%;
+    }
+    .logo-box span{
+        margin-left: 100px;
+        justify-content: space-between;
+    }
+
+    p{
+        margin-top: 10%;
+        text-align: center;
+        
+    }
+    .lip img{
+        height: 50vh;
+    }
+    img{
+        height: 350px;
+      
+        
+    }
+    .logo-box h5{
+        font-size: 22px;
+      }
+    
+    p{
+        text-align: left;
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 200px;
+    transition: all .2s ;
+    position: relative;
+
+}
+.btn:hover{
+    transform: translateY(-3px);
+    color: #777;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+}
+/* .btn-white{
+    background-color: #000;
+
+    color: #777;
+} */
+/* 
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .6s ;
+
+}
+.btn-success::after{
+    background-color: #b8b5a7;
+    
+}
+
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+} */
+.text{
+    color: white;
+}
+
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+   
+
+   
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.card-container{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ;
+   
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.thefront{
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    backface-visibility: hidden;
+    
+    color:#333;
+}
+img{
+    height: 100%;
+}
+.theback{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #b8b5a7;
+    color:#333;
+    transform:rotateY(180deg);
+}
+.text{
+    position: relative;
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 40%;
+    font-family: 'Beth Ellen', cursive;
+}
